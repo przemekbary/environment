@@ -1,0 +1,42 @@
+alias gs='git status'
+alias gf='git fetch'
+alias gss='git status --short'
+alias gsn='git status --short | cat -n'
+alias gca='git commit --amend -C HEAD'
+alias gcm='git commit -m'
+alias gau='git add -u'
+alias gpf='git push --force-with-lease'
+alias gpu='git add -u'
+alias gri='git rebase -i'
+alias grh='git reset HEAD'
+alias gpu='git push 2>&1 | grep "git push" | sh'
+alias dv='dirs -v'
+alias diffy='diff -y --suppress-common-lines -W200'
+alias gdv='git difftool --tool=vimdiff --no-prompt'
+alias gdvbc='git difftool --tool=bc --no-prompt'
+alias gba='git remote set-branches origin "*" && git fetch -v'
+alias clipboard="xclip -selection c"
+alias tags="ctags -R --extra=+f --c-types=+l *"
+alias scope='find -type f -iregex ".*\.cp*" -o -iregex ".*\.hp*" -type f  > cscope.files && cscope -b -i cscope.files'
+alias pytags='ctags -R --fields=+l --languages=python --python-kinds=-iv *'
+alias pyscope='find -type f -iregex ".*\.py*" -type f  > cscope.files && cscope -b -i cscope.files'
+
+calc (){ 
+	awk "BEGIN{ 
+				pi=3.141592653589793238462643383; 				
+				print $*;
+				}
+				
+				function log10(x)
+				{
+					return log(x) / log(10)
+				}				
+				
+				function int2hex(x)
+				{
+					return sprintf(\"0x%X\", x)
+				}			
+				" 
+}
+
+export EDITOR="vim"     # for pudb when editing
