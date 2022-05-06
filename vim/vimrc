@@ -29,6 +29,7 @@ nmap <C-Down>  :resize-5<CR>
 nmap <C-Left>  :vertical resize-5<CR>
 nmap <C-Right> :vertical resize+5<CR>
 
+nmap <F3> :grep -r '<cword>' . <cr>
 nmap <F4> :wincmd q<CR>
 nmap <F5> :wincmd x<CR>
 
