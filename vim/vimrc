@@ -14,6 +14,9 @@ set noswapfile
 syntax on
 set smarttab
 set smartindent
+set laststatus=2
+set statusline=%f
+set history=1000
 
 let g:netrw_preview   = 1
 let g:netrw_liststyle = 3
