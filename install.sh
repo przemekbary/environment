@@ -6,5 +6,6 @@ apt install ctags
 pip install pudb
 
 cat bash/bashrc >> ~/.bashrc
+. ~/.bashrc
 cp -r vim/plugin ~/.vim/
-cat vim/vimrc ~/.vim/vimrc
+cp vim/vimrc ~/.vim/vimrc
