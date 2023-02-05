@@ -16,7 +16,7 @@ alias gdv='git difftool --tool=vimdiff --no-prompt'
 alias gdvbc='git difftool --tool=bc --no-prompt'
 alias gba='git remote set-branches origin "*" && git fetch -v'
 alias clipboard="xclip -selection c"
-alias tags="ctags -R --extra=+f --c-types=+l *"
+alias tags="ctags -R --c++-kinds=+p+l --extra=+q+f --c-kinds=+p+l"
 alias scope='find -type f -iregex ".*\.cp*" -o -iregex ".*\.hp*" -type f  > cscope.files && cscope -b -i cscope.files'
 alias pytags='ctags -R --fields=+l --languages=python --python-kinds=-iv *'
 alias pyscope='find -type f -iregex ".*\.py*" -type f  > cscope.files && cscope -b -i cscope.files'
